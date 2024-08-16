@@ -1,0 +1,312 @@
+.addtocart-section {
+  position: relative;
+}
+.addtocart-section .video-box {
+  width: 100%;
+  position: absolute;
+  top: -94px;
+  left: 0px;
+}
+.addtocart-section .video-box video {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.addtocart-section .bg-poster {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -94px;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  opacity: 1;
+}
+.addtocart-section .bg-poster img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.addtocart-section .container .row {
+  position: relative;
+}
+.addtocart-section .container .row .border {
+  height: 100%;
+  border-left: 1px solid #715b3e;
+  border-right: 1px solid #715b3e;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: -5;
+}
+.addtocart-section .container .row .border .sub-border {
+  width: 20%;
+  border-left: 1px solid #21221e;
+}
+.addtocart-section .container .row .content {
+  position: relative;
+  z-index: 5;
+}
+.addtocart-section .container .row .content .heading {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.addtocart-section .container .row .content .main-box {
+  width: 100%;
+  padding-top: 100px;
+}
+.addtocart-section .container .row .content .main-box .box {
+  width: 50%;
+}
+.addtocart-section .container .row .content .main-box .box .content {
+  width: 100%;
+}
+.addtocart-section .container .row .content .main-box .box .content .image {
+  width: 50%;
+  padding: 50px;
+}
+.addtocart-section .container .row .content .main-box .box .content .image img {
+  display: block;
+  width: 100%;
+}
+.addtocart-section .container .row .content .main-box .box .content .details {
+  width: 50%;
+}
+.addtocart-section .container .row .content .main-box .box .content .details marquee {
+  color: red;
+  font-size: 18px;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .title {
+  padding: 25px 0px;
+  justify-content: space-between;
+  color: #c9ab81;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn {
+  padding-top: 20px;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul {
+  width: 100%;
+  justify-content: space-between;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li {
+  width: -moz-max-content;
+  width: max-content;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li h5 {
+  padding: 5px 10px;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li:nth-child(1) button::before {
+  top: -31px;
+  right: 25px;
+  transition: all 0.5s;
+  content: "";
+  rotate: 134deg;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li:nth-child(1) button::after {
+  left: 24px;
+  top: -33px;
+  content: "";
+  rotate: 130deg;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li:nth-child(1) button:nth-child(1)::before {
+  background-color: red;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li:nth-child(1) button:nth-child(1)::after {
+  background-color: rgb(255, 255, 255);
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button {
+  display: inline-block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  background-color: transparent;
+  color: white;
+  padding: 5px 20px;
+  font-weight: 300;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  border: 1px solid #c9ab81;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button::after {
+  position: absolute;
+  z-index: -1;
+  left: 67px;
+  top: -56px;
+  content: "";
+  rotate: 154deg;
+  content: "";
+  width: 0px;
+  transition: all 0.5s;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button::before {
+  z-index: -1;
+  position: absolute;
+  height: 100px;
+  background-color: green;
+  top: -21px;
+  right: 64px;
+  transition: all 0.5s;
+  content: "";
+  rotate: 154deg;
+  width: 0px;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button:hover {
+  color: black;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button:hover::after {
+  width: 100px;
+}
+.addtocart-section .container .row .content .main-box .box .content .details .btn ul li button:hover::before {
+  width: 100px;
+}
+.addtocart-section .container .row .content .main-box .box .content form {
+  padding-left: 15px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .input-box {
+  width: 100%;
+  padding: 5px 15px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .input-box:nth-child(1) {
+  justify-content: space-between;
+  align-items: center;
+}
+.addtocart-section .container .row .content .main-box .box .content form .input-box:nth-child(1) label {
+  width: 25%;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.addtocart-section .container .row .content .main-box .box .content form .input-box:nth-child(1) input {
+  display: inline-block;
+  width: 25%;
+  font-size: 19px;
+  color: #fff;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.addtocart-section .container .row .content .main-box .box .content form .textarea-box {
+  padding: 15px;
+  width: 100%;
+}
+.addtocart-section .container .row .content .main-box .box .content form .textarea-box label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.addtocart-section .container .row .content .main-box .box .content form .textarea-box textarea {
+  resize: vertical;
+  width: 100%;
+  font-size: 19px;
+  color: #fff;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn {
+  width: 100%;
+  padding: 25px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #c9ab81;
+  padding: 9px 35px;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button::after {
+  position: absolute;
+  z-index: -1;
+  left: 74px;
+  top: -56px;
+  content: "";
+  rotate: 154deg;
+  content: "";
+  width: 0px;
+  transition: all 0.5s;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button::before {
+  z-index: -1;
+  position: absolute;
+  height: 150px;
+  background-color: green;
+  top: -50px;
+  right: 74px;
+  transition: all 0.5s;
+  content: "";
+  rotate: 154deg;
+  width: 0px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button:hover {
+  color: black;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button:hover::after {
+  width: 150px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .btn button:hover::before {
+  width: 150px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .form-box .box {
+  width: 50%;
+}
+.addtocart-section .container .row .content .main-box .box .content form .form-box .box .input-box {
+  width: 100%;
+  padding: 5px 15px;
+  padding-right: 0px;
+}
+.addtocart-section .container .row .content .main-box .box .content form .form-box .box .input-box label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.addtocart-section .container .row .content .main-box .box .content form .form-box .box .input-box input {
+  display: inline-block;
+  width: 100%;
+  font-size: 19px;
+  color: #fff;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.addtocart-section .container .row .content .main-box .box .content form .form-box .box .image {
+  width: 100%;
+}
+.addtocart-section .container .row .content .main-box .box:nth-child(3) {
+  padding: 50px 15px 50px 50px;
+}
+.addtocart-section .container .row .content .main-box .box:nth-child(4) {
+  padding: 50px 50px 50px 15px;
+}
+.addtocart-section .container .row .content .main-box .box video {
+  width: 100%;
+}/*# sourceMappingURL=addtocart.css.map */

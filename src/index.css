@@ -1,0 +1,125 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+  list-style: none;
+  text-transform: capitalize;
+  font-family: "Familjen Grotesk", sans-serif;
+}
+body{
+  background-color: #0b1315;
+  overflow-x: hidden;
+  color: white;
+  scroll-behavior: smooth;
+}
+.container{
+  max-width: 1300px;
+  margin: 0px auto;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p {
+  font-family: "Josefin Sans";
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 20px;
+  border-color: rgb(255, 255, 255);
+}
+h1{
+  font-size: 48px;
+    line-height: 1.27em;
+    letter-spacing: .22em;
+}
+h2{
+  font-size: 41px;
+  line-height: 1.31em;
+  letter-spacing: .23em;
+}
+h5 {
+  font-size: 19px;
+  line-height: 1.52em;
+  letter-spacing: .23em;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+:root {
+  --size: 40px;
+  --color: #e5e6e7;
+  --accent: 85 18 235;
+}
+.cursor {
+  --cursor-x: 0px;
+  --cursor-y: 0px;
+  z-index: 99;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(calc(var(--cursor-x) - 50%),
+        calc(var(--cursor-y) - 50%),
+        0);
+  }
+
+  &::after {
+    opacity: 0.9;
+    background: #0b1315 ; 
+    width: calc(var(--size) - (var(--size) / 2 + var(--size) / 10));
+    height: calc(var(--size) - (var(--size) / 2 + var(--size) / 10));
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+  }
+
+  &::before {
+    width: 30px;
+    height: 30px;
+    background: #715b3e;
+  
+    border: transparent;
+    transition: all 200ms ease-out;
+  }
+
+  &.click::after {
+    width: var(--size);
+    height: var(--size);
+  }
+
+  &.hover::before {
+    background: rgb(var(--accent) / 0.5);
+  }
+
+  &.visible {
+    visibility: visible;
+  }
+}
+
+@media (scripting: enabled) {
+  * {
+    cursor: none;
+  }
+}
+@media screen and (max-width: 991px) {
+
+  .circle-cursor,
+  .cursor {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+}

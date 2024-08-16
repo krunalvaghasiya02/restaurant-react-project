@@ -1,0 +1,204 @@
+header {
+  border-bottom: 1px solid #715b3e;
+  z-index: 99;
+  transition: all 0.5s;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+
+  .container {
+    .row {
+      position: relative;
+
+      .border {
+        height: 100%;
+        border-left: 1px solid #715b3e;
+        border-right: 1px solid #715b3e;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+      }
+      .buy {
+        width: max-content;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 99;
+        transition: all 0.5s;
+        
+        button {
+          background-color: transparent;          
+            color: white;                
+            font-size: 25px;
+            padding: 10px;
+            i{
+              padding-right: 10px;
+            }       
+        }
+      }
+      .content {
+        position: relative;
+        padding: 0px 100px;
+        z-index: 5;
+        width: 100%;
+        justify-content: space-between;
+
+        .logo {
+          justify-content: center;
+          align-items: center;
+
+          .image {
+            img {
+              display: block;
+              height: 80px;
+              width: 80px;
+            }
+          }
+        }
+
+        .menu {
+          padding: 20px;
+
+          ul {
+            justify-content: center;
+
+            li {
+              padding: 15px;
+
+              a {
+                font-family: "Open Sans Condensed", sans-serif;
+                font-size: 14px;
+                line-height: 23px;
+                text-transform: uppercase;
+                letter-spacing: .36em;
+                position: relative;
+                transition: all 0.5s inherit;
+
+                &::after {
+                  transition-delay: 2s;
+                  position: absolute;
+                  content: '';
+                  width: 0%;
+                  bottom: -10px;
+                  left: 0px;
+                  height: 1px;
+                  background-color: #c9ab81;
+                  transition: all 0.5s;
+                }
+
+                &::before {
+                  transition: all 0.5s;
+                  transition-delay: 0.2s;
+                  position: absolute;
+                  content: '';
+                  width: 0%;
+                  bottom: -6px;
+                  left: 0px;
+                  background-color: #c9ab81;
+                  height: 1px;
+
+
+                }
+
+                &:hover {
+                  &::after {
+                    width: 100%;
+                  }
+
+                  &::before {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .btn {
+          justify-content: center;
+          align-items: center;
+
+          a {
+            display: inline-block;
+            font-family: "Open Sans Condensed", sans-serif;
+            font-size: 14px;
+            line-height: 2em;
+            padding: 11px 40px;
+            font-weight: 300;
+            letter-spacing: .36em;
+            text-transform: uppercase;
+            border: 1px solid #c9ab81;
+            position: relative;
+            transition: all 0.5s;
+            overflow: hidden;
+
+            &::after {
+              position: absolute;
+              z-index: -1;
+              left: 67px;
+              top: -56px;
+              content: "";
+              rotate: 154deg;
+              content: '';
+              width: 0px;
+              transition: all 0.5s;
+              height: 150px;
+              background-color: rgb(255, 255, 255);
+            }
+
+            &::before {
+              z-index: -1;
+              position: absolute;
+              height: 150px;
+              background-color: rgb(255, 255, 255);
+              top: -50px;
+              right: 79px;
+              transition: all 0.5s;
+              content: "";
+              rotate: 154deg;
+              width: 0px;
+            }
+
+            &:hover {
+              color: black;
+
+              &::after {
+                width: 150px;
+              }
+
+              &::before {
+                width: 150px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  .container {
+    max-width: 900px;
+  }
+
+  header {
+    .container {
+      .row {
+        .content {
+          padding: 0px;
+
+       
+            .btn {
+              display: none;
+            }
+          
+
+        }
+      }
+    }
+  }
+}
