@@ -42,12 +42,6 @@ const Cartlist = () => {
               <div className="sub-border"></div>
               <div className="sub-border"></div>
             </div>
-            <div className="buy " onClick={() => {
-              let clicksound = new Audio("https://uploads.sitepoint.com/wp-content/uploads/2023/06/1687569402mixkit-fast-double-click-on-mouse-275.wav");
-              clicksound.play();
-            }}>
-              <NavLink><button className="flex"><i className="fa-solid fa-cart-shopping"></i><h5>₹{FinalPrice}</h5></button></NavLink>
-            </div>
             <div className="content">
               <div className="main-box">
                 {cartItem.map((val) => {
@@ -69,19 +63,26 @@ const Cartlist = () => {
                               <button onClick={() => Increment(val)}><i className="fa-solid fa-square-plus"></i></button>
                               <p>{quantity}</p>
                               <button onClick={() => Decrement(val)}><i className="fa-solid fa-square-minus"></i></button></li>
-                            <li><p>{price}</p></li>
-                            <li><p>{totleprice}</p></li>
-
+                            <li><p>price:- {price}</p></li>
+                            <li><p>finalprice:- {totleprice}</p></li>
                           </ul>
                         </div>
                       </div>
                     </div>
 
+
+
                   );
                 })}
 
               </div>
-
+              <div className="finalprice flex">
+                <h5>total:- ₹{FinalPrice}</h5>
+                <NavLink to="/payment"><button type="submit" onClick={() => {
+                      let clicksound = new Audio("https://uploads.sitepoint.com/wp-content/uploads/2023/06/1687569402mixkit-fast-double-click-on-mouse-275.wav");
+                      clicksound.play();
+                    }}>PayNow</button></NavLink>
+              </div>
             </div>
           </div>
         </div>

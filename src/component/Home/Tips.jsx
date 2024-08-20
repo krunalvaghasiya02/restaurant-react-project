@@ -76,9 +76,9 @@ const Tips = () => {
             </div>
             <div class="marquee">
               <div class="marquee-inner">
-                <img src="../../../Image/AdobeStock_228280764_Preview.jpeg" alt="" />
-                <img src="../../../Image/AdobeStock_274091886_Preview.jpeg" alt="" />
-                <img src="../../../Image/AdobeStock_294912254_Preview.jpeg" alt="" />
+                <img src="../../../Image/DeWatermark.ai_1724153328569.png" alt="" />
+                <img src="../../../Image/DeWatermark.ai_1724153406090.png" alt="" />
+                <img src="../../../Image/DeWatermark.ai_1724153406090.png" alt="" />
                 <img src="../../../Image/AdobeStock_446859522_Preview.jpeg" alt="" />
                 <img src="../../../Image/AdobeStock_647347899_Preview.jpeg" alt="" />
                 <img src="../../../Image/AdobeStock_647349442_Preview.jpeg" alt="" />

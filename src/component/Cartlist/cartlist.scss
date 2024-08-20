@@ -3,29 +3,6 @@
     .row {
       position: relative;
 
-      .buy {
-        width: max-content;
-        position: absolute;
-        bottom: 0px;
-        right: 20px;
-        z-index: 2;
-        transition: all 0.5s;
-        button {
-          background-color: transparent;
-          align-items: center;
-
-          h5 {
-            color: white;
-          }
-
-          i {
-            color: rgb(243, 243, 243);
-            font-size: 25px;
-            padding: 10px;
-          }
-        }
-      }
-
       .border {
         height: 100%;
         border-left: 1px solid #715b3e;
@@ -169,6 +146,244 @@
                   }
                 }
               }
+            }
+
+
+          }
+        }
+
+        .finalprice {
+          height: max-content;
+          justify-content: flex-end;
+          padding-right: 10px;
+
+          h5 {
+            width: max-content;
+            padding: 10px 30px;
+            background: transparent;
+            color: rgb(255, 255, 255);
+            border: 1px solid #715b3e;
+            margin-right: 5px;
+          }
+
+          button {
+
+            display: inline-block;
+            font-size: 17px;
+            line-height: 2em;
+            font-weight: 300;
+            letter-spacing: .36em;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: transparent;
+            border: 1px solid #c9ab81;
+            padding: 9px 35px;
+            position: relative;
+            transition: all 0.5s;
+            overflow: hidden;
+
+            &::after {
+              position: absolute;
+              z-index: -1;
+              left: 74px;
+              top: -56px;
+              content: "";
+              rotate: 154deg;
+              width: 0px;
+              transition: all 0.5s;
+              height: 150px;
+              background-color: rgb(255, 255, 255);
+            }
+
+            &::before {
+              z-index: -1;
+              position: absolute;
+              height: 150px;
+              background-color: green;
+              top: -50px;
+              right: 74px;
+              transition: all 0.5s;
+              content: "";
+              rotate: 154deg;
+              width: 0px;
+            }
+
+            &:hover {
+              color: black;
+
+              &::after {
+                width: 150px;
+              }
+
+              &::before {
+                width: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+  .cartlist-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 25px;
+
+            .box {
+              .content {
+                .image {
+                  width: 15%;
+                }
+
+                .details {
+                  width: 85%;
+                }
+              }
+            }
+          }
+
+          .finalprice {
+            h5 {
+              padding: 15px;
+            }
+
+            button {
+              padding: 10px 15px;
+              letter-spacing: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .cartlist-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 25px;
+
+            .box {
+              .content {
+                .image {
+                  width: 20%;
+                }
+
+                .details {
+                  width: 80%;
+
+                  ul {
+                    height: 100%;
+
+                    li {
+                      width: 50%;
+                      justify-content: center;
+
+                      p {
+                        padding: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .finalprice {
+            h5 {
+              font-size: 13px;
+            }
+
+            button {
+              font-size: 13px;
+              padding: 11px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .cartlist-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 25px;
+
+            .box {
+              .content {
+                .image {
+                  width: 25%;
+                }
+
+                .details {
+                  width: 75%;
+
+                  ul {
+
+                    li {
+                      width: 100%;
+                      justify-content: start;
+
+                      h5 {
+                        padding: 0px 5px;
+                      }
+
+                      p {
+                        padding: 0px 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .finalprice {
+            justify-content: space-around;
+            h5 {
+              font-size: 13px;
+            }
+
+            button {
+              font-size: 13px;
+              padding: 11px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .cartlist-section {
+    .container {
+      .row {
+        .content {
+        
+
+          .finalprice {
+            h5 {
+              font-size: 12px;
+            }
+
+            button {
+              font-size: 10px;
+              padding: 11px 15px;
             }
           }
         }

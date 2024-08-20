@@ -147,4 +147,87 @@
 .login-section .container .row .content .form-box form a {
   padding-top: 15px;
   display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .login-section .container .row .content {
+    padding: 50px;
+  }
+  .login-section .container .row .content .heading {
+    padding-bottom: 0px;
+  }
+  .login-section .container .row .content .form-box form {
+    padding: 50px 0px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 40px;
+  }
+  .login-section .container .row .content .form-box:hover {
+    border: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .login-section .container .row .content .heading h3 {
+    font-size: 16px;
+  }
+  .login-section .container .row .content .form-box {
+    width: 100%;
+    padding: 0px 100px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 30px;
+  }
+  .login-section .container .row .content .form-box form label {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .login-section .container .row .content .form-box form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form .btn button {
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  .login-section .container .row .content .form-box form .checkbox {
+    padding-bottom: 0px;
+  }
+  .login-section .container .row .content .form-box:hover {
+    border: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .login-section .container .row .content .heading h3 {
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 25px;
+  }
+  .login-section .container .row .content .form-box form label {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .login-section .container .row .content .form-box form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form .btn button {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+}
+@media (max-width: 475px) {
+  .login-section .container .row .content {
+    padding: 30px 0px;
+  }
+  .login-section .container .row .content .heading h3 {
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form {
+    padding-top: 10px;
+  }
 }/*# sourceMappingURL=login.css.map */

@@ -3,7 +3,7 @@
 }
 .about-section .bg-poster {
   position: absolute;
-  height: 100vh;
+  height: 600px;
   top: -94px;
   left: 0px;
   width: 100%;
@@ -35,7 +35,7 @@
   z-index: 5;
 }
 .about-section .container .row .content .heading {
-  height: 90vh;
+  height: 500px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -173,26 +173,55 @@
 }
 
 @media (max-width: 1199px) {
-  .container {
-    max-width: 900px;
-  }
   .about-section .bg-poster {
+    height: 500px;
     top: 0px;
   }
-  .about-section .container .row .content {
-    padding: 0px;
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .heading span {
+    font-size: medium;
   }
-  .about-section .container .row .content .rastaurant-life .content .box ul li:nth-child(1) {
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .heading h2 {
+    font-size: 38px;
+  }
+  .about-section .container .row .content .rastaurant-life .content .main-box .box ul li:nth-child(1) {
     display: none;
   }
-}
-@media (max-width: 991px) {
-  .about-section .container .row .content .rastaurant-life .content .box ul li:nth-child(1) {
-    display: none;
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .image {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
   }
 }
 @media (max-width: 767px) {
-  .about-section .container .row .content .rastaurant-life .content .box ul li:nth-child(1) {
-    display: none;
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .heading span {
+    font-size: medium;
+  }
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .heading h2 {
+    font-size: 33px;
+  }
+  .about-section .container .row .content .rastaurant-life .content .main-box .box ul li a {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .about-section .container .row .content .rastaurant-life .content .main-box .box .image {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .about-section .container .row .content .rastaurant-life .content .main-box .box {
+    padding: 0px;
+    width: 100%;
+  }
+  .about-section .container .row .content .rastaurant-life .content .main-box .box ul {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 475px) {
+  .about-section .container .row .content .rastaurant-life .content .main-box {
+    padding: 15px;
   }
 }/*# sourceMappingURL=about.css.map */

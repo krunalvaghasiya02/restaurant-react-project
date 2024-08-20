@@ -50,10 +50,11 @@
 
         .form-box {
           transition: all 0.5s;
-          &:hover{
+
+          &:hover {
             border: 1px solid #c9ab81;
           }
-         
+
           width: 50%;
 
           form {
@@ -126,7 +127,7 @@
                 position: relative;
                 transition: all 0.5s;
                 overflow: hidden;
-    
+
                 &::after {
                   position: absolute;
                   z-index: -1;
@@ -140,7 +141,7 @@
                   height: 150px;
                   background-color: rgb(255, 255, 255);
                 }
-    
+
                 &::before {
                   z-index: -1;
                   position: absolute;
@@ -153,14 +154,14 @@
                   rotate: 154deg;
                   width: 0px;
                 }
-    
+
                 &:hover {
                   color: black;
-    
+
                   &::after {
                     width: 150px;
                   }
-    
+
                   &::before {
                     width: 150px;
                   }
@@ -172,11 +173,158 @@
               padding-top: 15px;
               display: inline-block;
             }
-         
+
           }
 
         }
       }
     }
   }
+}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          padding: 50px;
+
+          .heading {
+            padding-bottom: 0px;
+          }
+
+          .form-box {
+
+            form {
+              padding: 50px 0px;
+
+              h2 {
+                font-size: 40px;
+              }
+            }
+
+            &:hover {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            h3 {
+              font-size: 16px;
+            }
+          }
+
+          .form-box {
+            width: 100%;
+            padding: 0px 100px;
+
+            form {
+              h2 {
+                font-size: 30px;
+              }                
+                label {
+                  font-size: 16px;
+                  padding-top:10px ;
+                }
+                input {
+                  padding: 10px;
+                  font-size: 14px;               
+              }
+              .btn{
+                button{
+                  letter-spacing: 2px;
+                  padding: 5px 30px;
+                }
+              }
+              .checkbox{              
+                padding-bottom: 0px;
+              }
+            }
+
+            &:hover {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            h3 {
+              font-size: 14px;
+            }
+          }
+
+          .form-box {
+            width: 100%;
+            padding: 0px 50px;
+
+            form {
+              h2 {
+                font-size: 25px;
+              }                
+                label {
+                  font-size: 14px;
+                  padding-top:10px ;
+                }
+                input {
+                  padding: 10px;
+                  font-size: 14px;               
+              }
+              .btn{
+                button{
+                 font-size: 16px;
+                 padding: 5px 25px;
+                }
+              }
+           
+            }
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          padding: 30px 0px;
+          .heading {
+            h3 {
+              font-size: 14px;
+            }
+          }
+          .form-box {
+            form {
+              padding-top: 10px;
+            }          
+          }
+        }
+      }
+    }
+  }
+  
 }

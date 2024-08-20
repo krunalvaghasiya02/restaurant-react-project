@@ -7,9 +7,15 @@ import Header from "./component/Header/Header";
 import Addtocart from "./component/Addtocart/Addtocart";
 import About from "./component/About/About";
 import Cartlist from "./component/Cartlist/Cartlist";
+import Speciality from "./component/Home/Speciality";
+import Homeabout from "./component/Home/Homeabout";
+import Offer from "./component/Home/Offer";
 import Contact from "./component/Contact/Contact";
+import Tips from "./component/Home/Tips";
+import RastaurantImage from "./component/Home/RastaurantImage";
 import Footer from "./component/Footer/Footer";
 import Ragistration from "./component/Ragistration/Ragistration";
+import Payment from "./component/Payment/Payment";
 const App = () => {
   const { id } = useParams();
   return (
@@ -24,6 +30,12 @@ const App = () => {
         <Route path="/contact" Component={Contact} />
         <Route path="/about" Component={About} />
         <Route path="/cartlist" Component={Cartlist} />      
+        <Route path="/payment" Component={Payment} />      
+        <Route path="/speciality" Component={Speciality} />      
+        <Route path="/homeabout" Component={Homeabout} />      
+        <Route path="/offer" Component={Offer} />     
+        <Route path="/tips" Component={Tips} />     
+        <Route path="/our info" Component={RastaurantImage} />     
       </Routes>
       <Footer />
     </>

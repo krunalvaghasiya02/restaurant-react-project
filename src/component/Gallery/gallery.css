@@ -85,4 +85,44 @@
 .Gallery-section .container .row .content .main-box .box ul li .image img {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .Gallery-section .container .row .content .main-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .Gallery-section .container .row .content .main-box {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Gallery-section .container .row .content .main-box .box ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .Gallery-section .container .row .content {
+    padding-top: 50px;
+  }
+  .Gallery-section .container .row .content .heading {
+    padding-bottom: 0px;
+  }
+  .Gallery-section .container .row .content .main-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .Gallery-section .container .row .content .main-box .box ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 475px) {
+  .Gallery-section .container .row .content .main-box {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .Gallery-section .container .row .content .main-box .box ul li {
+    width: 100%;
+  }
 }/*# sourceMappingURL=gallery.css.map */

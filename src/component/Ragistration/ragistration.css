@@ -46,7 +46,6 @@
 .ragistration-section .container .row .content .form-box form h2 {
   padding: 25px;
   width: 100%;
-  padding-bottom: 10px;
   text-align: center;
   font-size: 45px;
   line-height: 1.31em;
@@ -164,4 +163,83 @@
 }
 .ragistration-section .container .row .content .form-box form .btn button:hover::before {
   width: 150px;
+}
+
+@media (max-width: 991px) {
+  .ragistration-section .container .row .content {
+    padding: 50px;
+  }
+  .ragistration-section .container .row .content .form-box form {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .ragistration-section .container .row .content {
+    padding: 50px;
+  }
+  .ragistration-section .container .row .content .heading {
+    padding-bottom: 0px;
+  }
+  .ragistration-section .container .row .content .form-box form {
+    width: 100%;
+  }
+  .ragistration-section .container .row .content .form-box form h2 {
+    font-size: 35px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box label {
+    font-size: 16px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .ragistration-section .container .row .content .form-box form .textarea-box label {
+    font-size: 16px;
+  }
+  .ragistration-section .container .row .content .form-box form .textarea-box textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .ragistration-section .container .row .content .form-box form .btn button {
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 575px) {
+  .ragistration-section .container .row .content .form-box form h2 {
+    font-size: 30px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box {
+    width: 100%;
+  }
+}
+@media (max-width: 475px) {
+  .ragistration-section .container .row .content .heading h3 {
+    font-size: 15px;
+  }
+  .ragistration-section .container .row .content .form-box form h2 {
+    font-size: 25px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box {
+    padding: 0px 15px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box label {
+    font-size: 14px;
+  }
+  .ragistration-section .container .row .content .form-box form .input-box input {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .ragistration-section .container .row .content .form-box form .textarea-box label {
+    font-size: 14px;
+  }
+  .ragistration-section .container .row .content .form-box form .textarea-box textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .ragistration-section .container .row .content .form-box form .btn button {
+    letter-spacing: 2px;
+    padding: 5px 25px;
+    font-size: medium;
+  }
 }/*# sourceMappingURL=ragistration.css.map */

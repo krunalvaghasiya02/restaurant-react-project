@@ -3,7 +3,7 @@
 
   .bg-poster {
     position: absolute;
-    height: 100vh;
+    height: 600px;
     top: -94px;
     left: 0px;
     width: 100%;
@@ -37,10 +37,8 @@
       .content {
         position: relative;
         z-index: 5;
-
-
         .heading {
-          height: 90vh;
+          height:500px;
           width: 100%;
           align-items: center;
           justify-content: center;
@@ -55,7 +53,6 @@
 
         .rastaurant-life {
           padding-bottom: 50px;
-
           .content {
             .main-box {
               padding: 50px;
@@ -72,7 +69,7 @@
                     z-index: -1;
                     content: '';
                     top: 0px;
-                    left: 0px;             
+                    left: 0px;
                     height: 100%;
                     border-bottom: 5px solid #c9ab81;
                     border-left: 5px solid #c9ab81;
@@ -188,7 +185,6 @@
                     content: '';
                     top: 0px;
                     left: 0px;
-                    // transform: translate(-50%,-50%);
                     height: 100%;
                     border-top: 5px solid #c9ab81;
                     border-right: 5px solid #c9ab81;
@@ -200,42 +196,56 @@
                     width: 100%;
                   }
                 }
-
               }
-
-
             }
           }
-
-
         }
       }
     }
   }
 }
+
 @media (max-width:1199px) {
-  .container{
-    max-width: 900px;
-  }
-  .about-section{
-    .bg-poster{
-      top:0px;
+  .about-section {
+    .bg-poster {
+      height: 500px;
+      top: 0px;
     }
-    .container{
-      .row{
-        .content{
-          padding: 0px;
-          .rastaurant-life{
-            .content{
-              .box{
-                ul{
-                  li{
-                    &:nth-child(1){
-                      display: none;
+
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  .heading {
+                    span {
+                      font-size: medium;
                     }
+
+                    h2 {
+                      font-size: 38px;
+                    }
+                  }
+
+                  ul {
+                    li {
+                      &:nth-child(1) {
+                        display: none;
+                      }
+                    }
+                  }
+
+                  .image {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
                   }
                 }
               }
+
             }
           }
         }
@@ -243,22 +253,49 @@
     }
   }
 }
+
 @media (max-width:991px) {
-  .about-section{
-    .container{
-      .row{
-        .content{
-          .rastaurant-life{
-            .content{
-              .box{
-                ul{
-                  li{
-                    &:nth-child(1){
-                      display: none;
+
+}
+
+@media (max-width:767px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  .heading {
+                    span {
+                      font-size: medium;
                     }
+
+                    h2 {
+                      font-size: 33px;
+                    }
+                  }
+
+                  ul {
+                    li {
+                      a {
+                        letter-spacing: 2px;
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+
+                  .image {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 45px;
                   }
                 }
               }
+
             }
           }
         }
@@ -266,22 +303,44 @@
     }
   }
 }
-@media (max-width:767px) {
-  .about-section{
-    .container{
-      .row{
-        .content{
-          .rastaurant-life{
-            .content{
-              .box{
-                ul{
-                  li{
-                    &:nth-child(1){
-                      display: none;
-                    }
+
+@media (max-width:575px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  padding: 0px;
+                  width: 100%;
+
+                  ul {
+                    padding: 0px 15px;
                   }
                 }
               }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:475px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                padding: 15px;
+            
+              }
+
             }
           }
         }

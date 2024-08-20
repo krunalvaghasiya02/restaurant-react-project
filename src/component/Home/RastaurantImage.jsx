@@ -54,13 +54,13 @@ const RastaurantImage = () => {
             <div className="main-card">
               <div className="image-bg">
                 <img
-                  src="../../../Image/AdobeStock_98997233_Preview.jpeg"
+                  src="../../../Image/AdobeStock_98997233_Preview-transformed.jpeg"
                   alt=""
                   className={activeIndex === 0 ? "active" : ""}
                   ref={(el) => (imagesRef.current[0] = el)}
                 />
                 <img
-                  src="../../../Image/AdobeStock_811058688_Preview.jpeg"
+                  src="../../../Image/DeWatermark.ai_1724153376362.png"
                   alt=""
                   className={activeIndex === 1 ? "active" : ""}
                   ref={(el) => (imagesRef.current[1] = el)}

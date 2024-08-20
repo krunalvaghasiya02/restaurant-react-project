@@ -1,4 +1,3 @@
-
 .slider-section {
   position: relative;
 
@@ -36,6 +35,7 @@
 
         .details {
           padding: 100px;
+
           span {
             font-family: 'Miniver', sans-serif;
             display: block;
@@ -64,7 +64,7 @@
 
             }
 
-            .Image {
+            .image {
               padding: 0px 45px;
 
               img {
@@ -91,13 +91,14 @@
           .btn {
             justify-content: center;
             padding: 50px 0px;
+            align-items: center;
 
             a {
               display: inline-block;
               font-family: "Open Sans Condensed", sans-serif;
               font-size: 14px;
               line-height: 2em;
-              padding: 11px 50px;
+              padding: 11px 40px;
               font-weight: 300;
               letter-spacing: .36em;
               text-transform: uppercase;
@@ -109,28 +110,27 @@
               &::after {
                 position: absolute;
                 z-index: -1;
-                left: 105px;
-                top: -50px;
+                left: 67px;
+                top: -56px;
                 content: "";
                 rotate: 154deg;
+                width: 0px;
                 transition: all 0.5s;
                 height: 150px;
                 background-color: rgb(255, 255, 255);
-                width: 0px;
               }
 
               &::before {
-                width: 0px;
                 z-index: -1;
                 position: absolute;
                 height: 150px;
                 background-color: rgb(255, 255, 255);
-                top: -40px;
-                right: 115px;
+                top: -50px;
+                right: 79px;
                 transition: all 0.5s;
                 content: "";
                 rotate: 154deg;
-
+                width: 0px;
               }
 
               &:hover {
@@ -145,6 +145,7 @@
                 }
               }
             }
+
           }
         }
       }
@@ -342,7 +343,7 @@
                     content: '';
                     width: 0%;
                     right: 0px;
-                    bottom: -10px;                   
+                    bottom: -10px;
                     height: 1px;
                     background-color: #c9ab81;
                     transition: all 0.5s;
@@ -817,7 +818,8 @@
 
   .container {
     .row {
-      position: relative;    
+      position: relative;
+
       .border {
         height: 100%;
         border-left: 1px solid #715b3e;
@@ -894,7 +896,7 @@
                     opacity: 1;
                   }
 
-           
+
 
                   .addtocart {
                     transform: translateX(0%);
@@ -922,7 +924,8 @@
                   h5 {
                     color: green;
                   }
-                }         
+                }
+
                 .addtocart {
                   position: absolute;
                   bottom: 65px;
@@ -1274,19 +1277,6 @@
 }
 
 .liveorder-section {
-  position: relative;
-  .video-box {
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    video {
-      width: 100%;
-      height: 100%;
-      opacity: 0.6;
-    }
-  }
   .container {
     .row {
       position: relative;
@@ -1311,154 +1301,1377 @@
         position: relative;
         z-index: 5;
 
-        .heading {
-          justify-content: center;
-          padding-top: 100px;
+        .video-box {
+          width: 100%;
 
-          span {
-            text-align: center;
-            font-family: Miniver, sans-serif;
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: .04em;
-            color: #c9ab81;
-            display: block;
+          video {
             width: 100%;
+            height: 100%;
+            opacity: 0.8;
           }
+        }
 
-          .title {
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+        // .heading {
+        //   justify-content: center;
+        //   padding-top: 100px;
 
-            h1 {
-              font-weight: 700;
-              text-transform: uppercase;
-              color: #c9ab81;
-              padding: 15px;
-            }
+        //   span {
+        //     text-align: center;
+        //     font-family: Miniver, sans-serif;
+        //     font-size: 19px;
+        //     font-weight: 400;
+        //     line-height: 28px;
+        //     letter-spacing: .04em;
+        //     color: #c9ab81;
+        //     display: block;
+        //     width: 100%;
+        //   }
 
-            .image {
-              img {
-                display: block;
-                width: 100%;
+        //   .title {
+        //     justify-content: center;
+        //     align-items: center;
+        //     width: 100%;
+
+        //     h1 {
+        //       font-weight: 700;
+        //       text-transform: uppercase;
+        //       color: #c9ab81;
+        //       padding: 15px;
+        //     }
+
+        //     .image {
+        //       img {
+        //         display: block;
+        //         width: 100%;
+        //       }
+        //     }
+        //   }
+
+
+        // }
+
+        // .main-box {
+        //   padding: 100px 0px;
+
+        //   .box {
+        //     width: 50%;
+
+        //     .content {
+        //       form {
+        //         .select-box {
+        //           width: 60%;
+        //           padding: 0px 15px;
+        //           ul {
+        //             width: 100%;
+        //             height: 300px;
+        //             background-color: white;
+        //             color: white;
+        //             font-size: 16px;
+        //             overflow: scroll;                  
+        //             li {
+        //               color: black;
+        //               padding: 5px;
+        //               border-bottom: 1px solid #0b1315;
+        //              p{
+        //               justify-content: space-between;
+        //              }
+        //             }
+
+        //           }
+
+        //           &:nth-child(1) {
+        //             width: 40%;
+
+        //           }
+        //         }
+
+        //         .btn {
+        //           width: max-content;
+        //           justify-content: end;
+
+        //           button {
+        //             display: inline-block;
+        //             font-family: "Open Sans Condensed", sans-serif;
+        //             font-size: 14px;
+        //             line-height: 2em;
+        //             background-color: transparent;
+        //             color: white;
+        //             padding: 5px 20px;
+        //             font-weight: 300;
+        //             letter-spacing: .36em;
+        //             text-transform: uppercase;
+        //             border: 1px solid #c9ab81;
+        //             position: relative;
+        //             transition: all 0.5s;
+        //             overflow: hidden;
+
+        //             &::after {
+        //               position: absolute;
+        //               z-index: -1;
+        //               left: 59px;
+        //               top: -29px;
+        //               content: "";
+        //               rotate: 154deg;
+        //               content: '';
+        //               width: 0px;
+        //               transition: all 0.5s;
+        //               height: 100px;
+        //               background-color: rgb(255, 255, 255);
+        //             }
+
+        //             &::before {
+        //               z-index: -1;
+        //               position: absolute;
+        //               height: 100px;
+        //               background-color: green;
+        //               top: -21px;
+        //               right: 52px;
+        //               transition: all 0.5s;
+        //               content: "";
+        //               rotate: 154deg;
+        //               width: 0px;
+        //             }
+
+        //             &:hover {
+
+        //               color: black;
+
+        //               &::after {
+        //                 width: 100px;
+        //               }
+
+        //               &::before {
+        //                 width: 100px;
+        //               }
+        //             }
+
+        //           }
+        //         }
+
+        //       }
+
+        //       ol {
+        //         width: 100%;
+
+        //         li {
+        //           p {
+        //             padding: 15px;
+        //             width: 100%;
+        //             line-height: 30px;
+
+        //             span {
+        //               color: green;
+        //               padding-left: 10px;
+        //               display: inline-block;
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  
+  .offer-section {
+    .container {
+      .row {
+        .content {
+       
+
+          .main-cart {
+            .cart {
+              width: 33.33%;
+
+              .content {
+                .image {
+                  .title {
+                    right: 34px;
+               
+                  }
+
+                
+
+                 
+                }
               }
             }
           }
-
-
         }
+      }
+    }
+  }
+  .tips-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 25px;
 
-        .main-box {
-          padding: 100px 0px;
-          .box {
-            width: 50%;
+            .box {
+              .heading {
+                padding: 0px;
 
-            .content {
-              form {
-                .select-box {
-                  width: 40%;
+                span {
+                  font-size: 18px;
+                }
 
-                  select {
-                    width: 100%;
-                    height: 50px;
-                    background: transparent;
-                    color: white;
-                    font-size: 16px;
-                    option{
-                      color: black;                                   
+                .title {
+                  .image {
+                    width: 10%;
+                    padding: 0px;
+
+                    img {
+                      width: 100%;
                     }
                   }
+
+                  h2 {
+                    width: 80%;
+                    padding: 10px 0px;
+                    font-size: 35px;
+                  }
+                }
+
+                p {
+                  padding: 0px;
                 }
 
                 .btn {
-                  width:max-content;
-                  justify-content: end;
-
-                  button {
-                    display: inline-block;
-                    font-family: "Open Sans Condensed", sans-serif;
-                    font-size: 14px;
-                    line-height: 2em;
-                    background-color: transparent;
-                    color: white;
-                    padding: 5px 20px;
-                    font-weight: 300;
-                    letter-spacing: .36em;
-                    text-transform: uppercase;
-                    border: 1px solid #c9ab81;
-                    position: relative;
-                    transition: all 0.5s;
-                    overflow: hidden;
-
-                    &::after {
-                      position: absolute;
-                      z-index: -1;
-                      left: 59px;
-                      top: -29px;
-                      content: "";
-                      rotate: 154deg;
-                      content: '';
-                      width: 0px;
-                      transition: all 0.5s;
-                      height: 100px;
-                      background-color: rgb(255, 255, 255);
-                    }
-
-                    &::before {
-                      z-index: -1;
-                      position: absolute;
-                      height: 100px;
-                      background-color: green;
-                      top: -21px;
-                      right: 52px;
-                      transition: all 0.5s;
-                      content: "";
-                      rotate: 154deg;
-                      width: 0px;
-                    }
-
-                    &:hover {
-
-                      color: black;
-
-                      &::after {
-                        width: 100px;
-                      }
-
-                      &::before {
-                        width: 100px;
-                      }
-                    }
-
-                  }
+                  padding: 15px;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slider-section {
+    .bg-poster {
+      height: 650px;
+    }
 
+    .container {
+      .row {
+        .content {
+          .details {
+            display: flex;
+            flex-direction: column;
+            padding: 50px 0px;
+            padding-bottom: 0px;
+            justify-content: center;
+            align-items: center;
+
+            .title {
+              justify-content: space-between;
+
+              h2 {
+                line-height: 80px;
+                width: 60%;
+                text-align: center;
+                letter-spacing: 12px;
               }
 
-              ol {
-                width: 100%;
+            }
+
+            p {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Homeabout-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            padding-top: 50px;
+
+            .title {
+              justify-content: space-around;
+            }
+
+            p {
+              width: 65%;
+            }
+          }
+
+          .main-box {
+            padding: 0px 30px;
+
+            .box {
+              .image {
+                padding-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rastaurantimage-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            padding: 50px 0px;
+
+            .title {
+              .image {
+                img {
+                  width: 125px;
+                  height: 125px;
+                }
+              }
+            }
+
+            p {
+              width: 100%;
+            }
+          }
+          .main-card{
+            height: 350px;
+          }
+        }
+      }
+    }
+  }
+
+  .Ourmenu-section {
+    .container {
+      .row {
+        .content {
+          padding: 50px 0px;
+
+          .heading {
+            span {
+              font-size: 18px;
+            }
+
+            h2 {
+              font-size: 38px;
+            }
+          }
+
+          .main-box {
+            padding: 15px;
+
+            .btn {
+              ul {
+                justify-content: space-evenly;
 
                 li {
-                  p {
-                    padding: 15px;
-                    width: 100%;
-                    line-height: 30px;
+                  width: 33.33%;
+                  padding: 15px;
+                }
+              }
+            }
+
+            .box {
+              padding: 15px;
+
+              ul {
+                li {
+                  padding: 10px;
+
+                  .title {
+                    padding: 15px 0px;
+
+                    h2 {
+                      font-size: 20px;
+                      line-height: 0px;
+                      letter-spacing: 2px;
+                    }
 
                     span {
-                      color: green;
-                      padding-left: 10px;
-                      display: inline-block;
+                      line-height: 0px;
                     }
                   }
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .speciality-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 25px;
+
+            .box {
+              .heading {
+                padding: 0px;
+
+                .title {
+                  .image {
+                    width: 10%;
+                  }
+
+                  h2 {
+                    width: 80%;
+                    padding: 10px 0px;
+                    font-size: 35px;
+                  }
+                }
+
+                p {
+                  padding: 0px;
+                }
+
+                .btn {
+                  padding: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:991px) {
+ 
+
+  .offer-section {
+    .container {
+      .row {
+        .content {
+          padding: 15px;
+
+          .heading {
+            span {
+              font-size: 18px;
+            }
+
+            h1 {
+              font-size: 35px;
+            }
+          }
+
+          .main-cart {
+            .cart {
+              width: 33.33%;
+
+              .content {
+                .image {
+                  .title {
+                    right: 15px;
+                    transform: translateX(141%);
+                  }
+
+                  .addtocart {
+                    left: 40px;
+                    transform: translateX(-159%); 
+                    button {
+                      padding: 15px;
+                      letter-spacing: 0px;
+                      line-height: 0px;
+                    }
+                  }
+
+                 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width:767px) {
+  .slider-section {
+    .bg-poster {
+      height: 550px;
+    }
+
+    .container {
+      .row {
+        .content {
+          .details {
+            span {
+              font-size: 20px;
+            }
+
+            .title {
+              width: 100%;
+              justify-content: space-between;
+
+              .image {
+                width: 20%;
+              }
+
+              h2 {
+                width: 60%;
+                line-height: 70px;
+                letter-spacing: 8px;
+                font-size: 45px;
+
+              }
+
+            }
+
+            p {
+              width: 80%;
+              line-height: 25px;
+              letter-spacing: 2px;
+              font-size: 18px;
+            }
+
+            .btn {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Homeabout-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+
+
+            .title {
+              h1 {
+                font-size: 35px;
+                padding: 5px 0px;
+              }
+            }
+
+            p {
+              width: 75%;
+            }
+          }
+
+          .main-box {
+
+
+            .box {
+              .image {
+                padding-top: 0px;
+                padding-bottom: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rastaurantimage-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            padding: 25px 0px;
+
+            span {
+              font-size: 17px;
+            }
+
+            .title {
+              .image {
+                width: 15%;
+
+                img {
+                  width: 100px;
+                  height: 100px;
+                }
+              }
+
+              h1 {
+                width: 70%;
+                font-size: 35px;
+                padding: 0px 15px;
+              }
+            }
+
+            p {
+              width: 100%;
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Ourmenu-section {
+    .container {
+      .row {
+        .content {
+          padding: 25px 0px;
+
+          .heading {
+            span {
+              font-size: 17px;
+            }
+
+            h2 {
+              font-size: 34px;
+            }
+          }
+
+          .main-box {
+            padding: 15px;
+
+            .btn {
+              padding-bottom: 10px;
+
+              ul {
+                justify-content: space-evenly;
+
+                li {
+                  width: 25%;
+                  padding: 10px 0px;
+
+                  button {
+                    width: 150px;
+                    line-height: 0px;
+                    letter-spacing: 2px;
+                    padding: 20px 5px;
+                  }
+                }
+              }
+            }
+
+            .box {
+
+              padding: 0px;
+
+              ul {
+                li {
+                  padding: 10px;
+
+                  .title {
+                    h2 {
+                      font-size: 16px;
+
+                      letter-spacing: 2px;
+                    }
+
+                    span {
+                      font-size: 16px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .speciality-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              padding: 0px;
+
+              .heading {
+                padding: 0px;
+
+                span {
+                  line-height: 0px;
+                  font-size: 16px;
+                }
+
+                .title {
+                  .image {
+                    display: none;
+                  }
+
+                  h2 {
+                    width: 100%;
+                    padding: 10px 0px;
+                    font-size: 28px;
+                  }
+                }
+
+                p {
+                  padding: 0px;
+                  line-height: 20px;
+                  width: 80%;
+                }
+
+                .btn {
+                  padding: 15px;
+
+                  a {
+                    line-height: 0px;
+                    letter-spacing: 0px;
+                    font-size: 16px;
+                    padding: 20px 25px;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-section {
+    .container {
+      .row {
+        .content {
+          padding: 15px;
+
+          .heading {
+            span {
+              font-size: 16px;
+            }
+
+            h1 {
+              font-size: 28px;
+              padding: 5px;
+            }
+          }
+
+          .main-cart {
+            .cart {
+              width: 33.33%;
+              padding: 10px;
+
+              .content {
+                padding: 0px;
+
+                .image {
+                  .title {
+                    right: 40px;
+                    transform: translateX(141%);
+                  }
+
+                  .addtocart {
+                    left: 30px;
+
+                    button {
+                      padding: 15px;
+                      letter-spacing: 0px;
+                      line-height: 0px;
+                    }
+                  }
+
+
+                }
+
+                &:hover {
+                  .image {
+                    .title {
+                      transform: translateX(0%);
+                    }
+                  }
+                }
+
+                .details {
+                  span {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tips-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              width: 100%;
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .marquee-inner img {
+    width: 30%;
+  }
+}
+
+@media (max-width:575px) {
+  .slider-section {
+    .bg-poster {
+      height: 470px;
+    }
+
+    .container {
+      .row {
+        .content {
+          .details {
+            padding: 10px 0px;
+
+            span {
+              font-size: 18px;
+            }
+
+            .title {
+              width: 100%;
+
+              .image {
+                display: none;
+              }
+
+              h2 {
+                width: 100%;
+                line-height: 49px;
+                letter-spacing: 8px;
+                font-size: 38px;
+
+              }
+
+            }
+
+            p {
+              width: 100%;
+              padding: 0px 20px;
+            }
+
+            .btn {
+              padding: 15px;
+
+              a {
+                padding: 10px 20px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Homeabout-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            .title {
+              .image {
+                display: none;
+              }
+
+              h1 {
+                font-size: 30px;
+
+              }
+            }
+
+            p {
+              width: 90%;
+              padding: 0px;
+            }
+          }
+
+          .main-box {
+            .box {
+              width: 100%;
+
+              &:nth-child(2) {
+                display: none;
+              }
+
+              &:nth-child(3) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rastaurantimage-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            padding: 25px 0px;
+
+            span {
+              font-size: 17px;
+            }
+
+            .title {
+
+              .image {
+
+                width: 100%;
+                display: none;
+
+                &:nth-child(1) {
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+              }
+
+              h1 {
+                width: 70%;
+                font-size: 30px;
+                text-align: center;
+                padding: 0px 15px;
+              }
+            }
+          }
+
+          .main-card {
+            height: 250px;
 
           }
         }
       }
     }
+  }
+
+  .Ourmenu-section {
+    .container {
+      .row {
+        .content {
+          padding: 25px 0px;
+
+          .heading {
+            span {
+              font-size: 15px;
+            }
+
+            h2 {
+              font-size: 24px;
+            }
+          }
+
+          .main-box {
+            padding: 0px 15px;
+
+            .btn {
+              ul {
+                padding-top: 10px;
+
+                li {
+                  width: 50%;
+                  padding: 5px 0px;
+                }
+              }
+            }
+
+            .box {
+              padding: 0px;
+
+              ul {
+                li {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .speciality-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              width: 100%;
+
+              .heading {
+                padding-top: 25px;
+
+                .btn {
+                  padding: 15px;
+
+                  a {
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    padding: 20px 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-section {
+    .container {
+      .row {
+        .content {
+          padding: 15px;
+
+          .heading {
+            span {
+              font-size: 14px;
+            }
+
+            h1 {
+              font-size: 24px;
+
+            }
+          }
+
+          .main-cart {
+            .cart {
+              width: 50%;
+              padding: 10px;
+
+              .content {
+                padding: 0px;
+
+                .image {
+                  .title {
+                    right: 48px;
+                    transform: translateX(150%);
+                  }
+
+                }
+
+                .addtocart {
+                  left: 30px;
+
+                  button {
+                    padding: 15px;
+                    letter-spacing: 0px;
+                    line-height: 0px;
+                  }
+                }
+
+
+              }
+
+              &:hover {
+                .image {
+                  .title {
+                    transform: translateX(0%);
+                  }
+                }
+              }
+
+              .details {
+                span {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tips-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              .image {
+                width: 100%;
+
+                &:nth-child(1) {
+                  padding: 0px;
+                }
+
+                &:nth-child(2) {
+                  padding: 0px;
+                  padding-top: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .marquee-inner img {
+    width: 50%;
+  }
+}
+
+@media (max-width:475px) {
+  .slider-section {
+    .bg-poster {
+      height: 420px;
+    }
+
+    .container {
+      .row {
+        .content {
+          .details {
+
+            span {
+              font-size: 14px;
+            }
+
+            .title {
+              width: 100%;
+
+              h2 {
+
+                line-height: 40px;
+                letter-spacing: 11px;
+                font-size: 30px;
+
+              }
+
+            }
+
+            p {
+              width: 100%;
+              padding: 0px 20px;
+              letter-spacing: 1px;
+              line-height: 20px;
+              font-size: 15px;
+            }
+
+            .btn {
+
+
+              a {
+                padding: 5px 25px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Homeabout-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            span {
+              font-size: 16px;
+            }
+
+            .title {
+              h1 {
+                font-size: 25px;
+              }
+            }
+
+            p {
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rastaurantimage-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            padding: 0px;
+
+            span {
+              font-size: 16px;
+            }
+
+            .title {
+              h1 {
+                width: 100%;
+              }
+            }
+
+            padding-bottom: 20px;
+          }
+
+          .main-card {
+            height: 200px;
+
+          }
+        }
+      }
+    }
+  }
+  .Ourmenu-section {
+    .container {
+      .row {
+        .content {
+          padding: 0px;
+
+          .heading {
+            span {
+              font-size: 16px;
+            }
+
+            h2 {
+              font-size: 25px;
+            }
+          }
+
+          .main-box {
+          
+            .btn {
+              ul {           
+                li {            
+                  button{
+                    width: 125px;
+                  }
+                }
+              }
+            }      
+          }
+        }
+      }
+    }
+  }
+  .speciality-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              .heading {  
+                .title{
+                  h2{
+                    font-size: 25px;
+                  }
+                }   
+                p{
+                  width: 100%;
+                }    
+                .btn {           
+                  a {
+                    letter-spacing: 1px;             
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .offer-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            span {
+              font-size: 16px;
+            }
+            h1 {
+              font-size: 25px;
+            }
+          }
+
+          .main-cart {
+            .cart {
+              width: 100%;
+              padding: 10px;
+
+              .content {
+                padding: 0px;
+
+                .image {
+                  .title {
+                    right: 93px;
+                    top: 85px;
+                    transform: translateX(220%);
+                    h5{
+                      font-size: 20px;
+                    }
+                  }
+                  .addtocart {
+                    left: 102px;
+                    transform: translateX(-190%);
+                    bottom: 100px;
+                  }
+                }
+
+             
+              }
+
+          .details{
+            p{
+              font-size: 23px;
+            }
+          }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tips-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              .heading{
+                span{
+                  font-size: 16px;
+                }
+                .title{
+                  .image{
+                    display: none;
+                  }
+                  h2{
+                    width: 100%;
+                    font-size: 25px;
+                  }
+                }
+                p{
+                  font-size: 16px;
+                  line-height: 25px;
+                }
+              }
+           
+            }
+          }
+        }
+      }
+    }
+  }
+  .marquee-inner img {
+    width: 80%;
   }
 }

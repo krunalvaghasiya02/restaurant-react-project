@@ -575,21 +575,21 @@ export const DataMenu = [
     name: 'paneer tikka',
     category: 'SpecialDish',
     price: 900,
-    image: "../../../Image/AdobeStock_294912254_Preview.jpeg",
+    image: "../../../Image/DeWatermark.ai_1724153406090.png",
   },
   {
     id: 154,
     name: 'punjabi full plate',
     category: 'SpecialDish',
     price: 750,
-    image: "../../../Image/AdobeStock_228280764_Preview.jpeg",
+    image: "../../../Image/AdobeStock_228280764_Preview-transformed.jpeg",
   },
   {
     id: 155,
     name: 'noodels',
     category: 'SpecialDish',
     price: 500,
-    image: "../../../Image/AdobeStock_274091886_Preview.jpeg",
+    image: "../../../Image/DeWatermark.ai_1724153328569.png",
   },
 ]
 

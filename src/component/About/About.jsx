@@ -21,37 +21,37 @@ const About = () => {
               </div>
               <div className="rastaurant-life">
                 <div className="content">
-                
-                  <div className="main-box flex">
-               
-                    <div className="box">
-                    <div className="heading flex">
-                    <span>rastaurant life</span>
-                    <div className="title flex">
-                      <div className="Image flex"><img src="./Image/rev-img.png" alt="" /></div>
-                      <h2>ABOUT US</h2>
-                      <div className="Image flex"><img src="./Image/rev-img.png" alt="" /></div>
-                    </div>
 
-                  </div>
+                  <div className="main-box flex">
+
+                    <div className="box">
+                      <div className="heading flex">
+                        <span>rastaurant life</span>
+                        <div className="title flex">
+                          <div className="Image flex"><img src="./Image/rev-img.png" alt="" /></div>
+                          <h2>ABOUT US</h2>
+                          <div className="Image flex"><img src="./Image/rev-img.png" alt="" /></div>
+                        </div>
+
+                      </div>
                       <ul>
                         <li><p>Lorem ipsum dolor sit amet, consecte turn se adipisicing elit, sed do eiusmod tempor ens incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci reprehenderit in voluptate velit esse cillu sint occaecat error sit volu.</p></li>
                         <li><p>Cupidatat non proident, sunt in culpa qui cia deserunt mollit anim id est laborum. Sed utsa tat monullamco laboris nisi ut aliquip exe ne com odoconsequat. Duis aute irure dolor in per spiciamt vsun.</p></li>
                         <li><p>aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nem odit aut fugit, sed quia consequ un turmagnido lors.</p></li>
                         <li><NavLink onClick={() => {
-                let clicksound = new Audio("https://uploads.sitepoint.com/wp-content/uploads/2023/06/1687569402mixkit-fast-double-click-on-mouse-275.wav");
-                clicksound.play();
-              }}>Read More</NavLink></li>
+                          let clicksound = new Audio("https://uploads.sitepoint.com/wp-content/uploads/2023/06/1687569402mixkit-fast-double-click-on-mouse-275.wav");
+                          clicksound.play();
+                        }}>Read More</NavLink></li>
                       </ul>
                     </div>
                     <div className="box">
-                      <div className="image">
+                      <div className="image flex">
                         <img src="./Image/AdobeStock_322495633_Preview.jpeg" alt="" />
                       </div>
                     </div>
-             
+
                   </div>
-             
+
                 </div>
               </div>
             </div>

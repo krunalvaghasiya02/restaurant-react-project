@@ -54,14 +54,15 @@ const Footer = () => {
                     <NavLink>twitter</NavLink>
                   </div>
                 </div>
-
+               
               </div>
+              <div className="pramotion flex">
+            <p>front end devloped by krunal vaghasiya</p>
+                </div>
             </div>
           </div>
         </div>
       </footer>
-
-
     </>
   );
 }
